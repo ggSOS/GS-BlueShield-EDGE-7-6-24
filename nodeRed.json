@@ -1,0 +1,93 @@
+[
+    {
+        "id": "98ce6d690675fa6f",
+        "type": "tab",
+        "label": "Fluxo 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c6c12244cf37163b",
+        "type": "mqtt out",
+        "z": "98ce6d690675fa6f",
+        "name": "",
+        "topic": "blue_shield/001",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "0d09cf54133cf472",
+        "x": 660,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "e701e1a3b0fe0a63",
+        "type": "serial in",
+        "z": "98ce6d690675fa6f",
+        "name": "",
+        "serial": "4141b094a4ce9354",
+        "x": 250,
+        "y": 200,
+        "wires": [
+            [
+                "c6c12244cf37163b"
+            ]
+        ]
+    },
+    {
+        "id": "0d09cf54133cf472",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt-dashboard.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "4141b094a4ce9354",
+        "type": "serial-port",
+        "name": "",
+        "serialport": "COM3",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    }
+]
